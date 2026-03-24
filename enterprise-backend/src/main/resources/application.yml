@@ -6,8 +6,8 @@ spring:
     name: enterprise-backend
   datasource:
     url: jdbc:postgresql://localhost:5432/asea
-    username: postgres
-    password: postgres
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -19,7 +19,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
 jwt:
-  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  secret: ${JWT_SECRET}
   expirationMs: 86400000
 
 springdoc:
