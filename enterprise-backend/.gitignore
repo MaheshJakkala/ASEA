@@ -1,4 +1,0 @@
-.env
-enterprise-backend/target/
-*.class
-*.jar
